@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="グループ_60" data-name="グループ 60" transform="translate(-92 -191)">
+    <g id="楕円形_10" data-name="楕円形 10" transform="translate(92 191)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="10" cy="10" r="10" stroke="none"/>
+      <circle cx="10" cy="10" r="9" fill="none"/>
+    </g>
+    <path id="ifn0759_1_" data-name="ifn0759 (1)" d="M17.534,263.27a.465.465,0,0,0-.3.809l2.893,2.728H14a.465.465,0,0,0,0,.931h6.137l-2.918,2.727a.466.466,0,1,0,.636.68l3.768-3.521a.465.465,0,0,0,0-.679L17.872,263.4a.466.466,0,0,0-.338-.131Z" transform="translate(-99.733 24.238) rotate(-45)" fill="#fff"/>
+  </g>
+</svg>
