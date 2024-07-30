@@ -1,0 +1,143 @@
+.about-contents {
+  background-color: #111111;
+  color: #FFFFFF;
+  border-radius: 50px 50px 0 0;
+}
+
+.about-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 120px 80px;
+}
+
+.about-column {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 90px;
+  margin-top: 36px;
+}
+
+.about-profile-block {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.about-detail-block {
+  width: 100%;
+  min-width: 450px;
+  flex: 2;
+}
+
+.about-profile-img {
+  width: 480px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.about-detail-heading-block {
+  margin-bottom: 40px;
+}
+
+.about-detail-heading {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-detail-sub-heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.about-detail-list {
+  display: grid;
+  grid-gap: 32px;
+}
+
+.about-detail-text{
+  font-weight: bold;
+}
+
+.about-link-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin-top: 80px;
+}
+
+.about-link-btn {
+  background-color: #EE2E55;
+  border-radius: 20px;
+  padding: 80px 40px;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.about-link-btn:hover {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+
+.about-link-btn::before {
+  content: '';
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  background-image: url('../images/link.png');
+  background-size: contain;
+}
+
+.about-link-btn .mail-icon {
+  width: 32px;
+  height: 22px;
+  padding-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-inner {
+    padding: 60px 20px;
+  }
+
+  .about-column {
+    display: block;
+  }
+
+  .about-profile-block {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .about-profile-img {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .about-detail-block {
+    margin-top: 20px;
+    min-width: auto;
+  }
+
+  .about-detail-text {
+    font-size: 18px;
+  }
+  
+  .about-link-block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .about-link-btn:hover {
+    scale: 1;
+  }
+
+}

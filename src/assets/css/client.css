@@ -1,0 +1,141 @@
+.client-contents {
+  background-color: #F2F2F2;
+}
+
+.client-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 80px 100px;
+}
+
+.client-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(343px, 343px));
+  grid-gap: 45px;
+  margin-top: 64px;
+  width: 100%;
+  justify-content: center;
+}
+
+.client-thumbnail-block {
+  width: 343px;
+  display: grid;
+  grid-gap: 0 20px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: #CCCCCC 4px 4px 8px;
+}
+
+.client-thumbnail-block:hover {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+
+.client-thumbnail-block:hover .client-hover-block {
+  display: block;
+}
+
+.client-thumbnail-img {
+  width: 343px;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+}
+
+.client-column-text {
+  color: #333333;
+  font-weight: bold;
+  padding: 20px 24px;
+}
+
+.client-hover-block {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 0 0;
+  display: none;
+}
+
+.client-hover-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.client-link-detail {
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  font-size: 32px;
+  display: flex;
+  grid-gap: 18px;
+  line-height: 0.9;
+  padding: 0 0 32px 3rem;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.client-link-detail::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background-image: url('../images/detail.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.client-link-detail:hover::before {
+  background-image: url('../images/detail_hover.svg');
+  transition: all 0.3s;
+}
+
+.client-link-site {
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  grid-gap: 8px;
+  margin-top: 32px;
+  padding-left: 2rem;
+}
+
+.client-link-site::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: '';
+  background-image: url('../images/window.svg');
+  width: 20px;
+  height: 20px;
+}
+
+.client-link-site:hover::before {
+  background-image: url('../images/window_hover.svg');
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .client-inner{
+    padding: 60px 20px;
+  }
+
+  .client-column {
+    grid-gap: 40px;
+  }
+
+  .client-thumbnail-block:hover {
+    scale: 1;
+  }
+}

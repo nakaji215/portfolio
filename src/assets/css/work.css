@@ -1,0 +1,166 @@
+.work-contents {
+  background-color: #F2F2F2;
+}
+
+.portfolio-inner,
+.app-inner {
+  padding: 156px 0 80px;
+}
+
+.portfolio-bg {
+  background-image: url('../images/portfolio_ss.png');
+  background-size: 640px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.app-bg {
+  /* background-image: url('../images/portfolio_ss.png'); */
+  background-size: 640px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.portfolio-contents {
+  background-color: #BEA7B8;
+  min-height: 640px;
+  z-index: 0;
+  width: 50%;
+}
+
+.app-contents {
+  background-color: #BEA7B8;
+  min-height: 640px;
+  z-index: 0;
+  width: 50%;
+}
+
+.portfolio-contents:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  animation: width 0.3s forwards;
+}
+
+.app-contents:hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  animation: width 0.3s forwards;
+}
+
+.portfolio-contents:hover {
+  animation: width 0.3s forwards;
+}
+
+.portfolio-contents:not(:hover) {
+  animation: reduceWidth 0.3s forwards;
+}
+
+.app-contents:not(:hover) {
+  animation: reduceWidth 0.3s forwards;
+}
+
+@keyframes reduceWidth {
+  0% {
+      width: 100%;
+  }
+  100% {
+      width: 50%;
+  }
+}
+
+@keyframes width {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.app-contents:hover.portfolio-contents,
+.portfolio-contents:hover.app-contents {
+  width: 0%;
+  transition: all 0.3s;
+}
+
+.work-wrap {
+  background-color: rgba(17, 17, 17, 0.57);
+  width: 100%;
+  height: 640px;
+}
+
+.work-inner {
+  padding: 156px 0 80px;
+}
+
+.work-column {
+  background-color: #BEA7B8;
+  margin-top: 64px;
+  display: flex;
+  position: relative;
+  min-height: 640px;
+}
+
+.work-title {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.work-detail-text {
+  max-width: 333px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.work-btn {
+  margin: 144px auto 0;
+  display: block;
+  width: 88px;
+  height: 88px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-inner {
+    padding: 80px 0px;
+  }
+
+  .work-column {
+    display: block;
+  }
+
+  .portfolio-contents {
+    width: 100%;
+  }
+
+  .app-contents {
+    width: 100%;
+  }
+
+  .app-contents:hover,
+  .portfolio-contents:hover {
+    position: static;
+    animation: none;
+  }
+
+  .portfolio-contents:hover.app-contents {
+    width: 100%;
+  }
+
+  .app-contents:hover.portfolio-contents {
+    width: 100%;
+  }
+
+  .portfolio-contents:not(:hover) {
+    animation: none;
+  }
+  
+  .app-contents:not(:hover) {
+    animation: none;
+  }
+}
